@@ -1,7 +1,9 @@
 package course.concurrency.m3_shared.threadLocal;
 
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Semaphore;
 
 public class TL_example5 {
 
@@ -21,6 +23,7 @@ public class TL_example5 {
         for (int i = 0; i < 5; i++) {
             executor.submit(new Task());
         }
+
     }
 
 }
